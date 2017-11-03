@@ -19,6 +19,8 @@
 		259317F31FAC0893005C1E70 /* PMIconGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259317F21FAC0893005C1E70 /* PMIconGenerator.swift */; };
 		259317F81FAC1CF3005C1E70 /* PMPropertiesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259317F71FAC1CF3005C1E70 /* PMPropertiesListView.swift */; };
 		259317FA1FAC1D03005C1E70 /* PMPropertiesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259317F91FAC1D03005C1E70 /* PMPropertiesMapView.swift */; };
+		25AADA871FAC861600BB05D7 /* PMUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AADA861FAC861600BB05D7 /* PMUser.swift */; };
+		25AADA891FAC91EE00BB05D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25AADA881FAC91DF00BB05D7 /* CoreGraphics.framework */; };
 		25CB94D51FAC033F00A58AF5 /* PMDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D41FAC033F00A58AF5 /* PMDataManager.swift */; };
 		25CB94D71FAC036E00A58AF5 /* PMProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D61FAC036E00A58AF5 /* PMProperty.swift */; };
 		25CB94D91FAC03FA00A58AF5 /* PMCustomStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D81FAC03FA00A58AF5 /* PMCustomStructs.swift */; };
@@ -44,6 +46,8 @@
 		259317F21FAC0893005C1E70 /* PMIconGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMIconGenerator.swift; sourceTree = "<group>"; };
 		259317F71FAC1CF3005C1E70 /* PMPropertiesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPropertiesListView.swift; sourceTree = "<group>"; };
 		259317F91FAC1D03005C1E70 /* PMPropertiesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPropertiesMapView.swift; sourceTree = "<group>"; };
+		25AADA861FAC861600BB05D7 /* PMUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMUser.swift; sourceTree = "<group>"; };
+		25AADA881FAC91DF00BB05D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		25CB94D41FAC033F00A58AF5 /* PMDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMDataManager.swift; sourceTree = "<group>"; };
 		25CB94D61FAC036E00A58AF5 /* PMProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMProperty.swift; sourceTree = "<group>"; };
 		25CB94D81FAC03FA00A58AF5 /* PMCustomStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMCustomStructs.swift; sourceTree = "<group>"; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25AADA891FAC91EE00BB05D7 /* CoreGraphics.framework in Frameworks */,
 				25E5D0021FAC67DA00C3C19F /* MapKit.framework in Frameworks */,
 				D5B20E8407B9D576F36AEC4E /* Pods_property_management_app.framework in Frameworks */,
 			);
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				25CB94D61FAC036E00A58AF5 /* PMProperty.swift */,
+				25AADA861FAC861600BB05D7 /* PMUser.swift */,
 			);
 			path = "Data Objects";
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 		F49A7C2D462A49D69FE95DDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25AADA881FAC91DF00BB05D7 /* CoreGraphics.framework */,
 				25E5D0011FAC67CE00C3C19F /* MapKit.framework */,
 				BE3412ADA4FE60048AE7DBA0 /* Pods_property_management_app.framework */,
 			);
@@ -305,6 +312,7 @@
 				253B9CCA1FAC768E0009EB3D /* PMColorHelpers.swift in Sources */,
 				253B9CCE1FAC78C40009EB3D /* PMPropertyInfoViewController.swift in Sources */,
 				25CB94D91FAC03FA00A58AF5 /* PMCustomStructs.swift in Sources */,
+				25AADA871FAC861600BB05D7 /* PMUser.swift in Sources */,
 				259317F81FAC1CF3005C1E70 /* PMPropertiesListView.swift in Sources */,
 				25E5D0081FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift in Sources */,
 				259317F31FAC0893005C1E70 /* PMIconGenerator.swift in Sources */,

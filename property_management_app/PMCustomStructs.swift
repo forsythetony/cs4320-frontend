@@ -21,6 +21,11 @@ struct PMCoordinate {
         return "(lat: \(latitude), long: \(longitude)"
     }
 
+    var coordinateValue : CLLocationCoordinate2D {
+        get {
+            return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        }
+    }
 }
 
 
@@ -43,11 +48,55 @@ extension Double {
     }
 }
 
+extension Int {
+    
+    var DoubleValue : Double {
+        get {
+            return Double(self)
+        }
+    }
+}
 extension UIEdgeInsets {
     
     var totalWidth : CGFloat {
         get {
             return self.left + self.right
         }
+    }
+}
+
+
+struct PMLocationHelper {
+    
+    
+    static func findCoordinateCenter( coords : [CLLocationCoordinate2D]) -> (CLLocationCoordinate2D, MKCoordinateSpan) {
+        
+        var latitudeSum = 0.0
+        var longitudeSum = 0.0
+        
+        var longitudes = [Double]()
+        var latitudes = [Double]()
+        
+        
+        for c in coords {
+            
+            latitudeSum += c.latitude
+            longitudeSum += c.longitude
+            
+            longitudes.append(c.longitude)
+            latitudes.append(c.latitude)
+            
+        }
+        
+        let maxLong = longitudes.max() ?? 0.0
+        let minLong = longitudes.min() ?? 0.0
+        let maxLat = latitudes.max() ?? 0.0
+        let minLat = latitudes.min() ?? 0.0
+        
+        let coord = CLLocationCoordinate2D(latitude: latitudeSum / coords.count.DoubleValue, longitude: longitudeSum / coords.count.DoubleValue)
+//
+        let span = MKCoordinateSpan(latitudeDelta: fabs(maxLat - minLat), longitudeDelta: fabs(maxLong - minLong))
+//
+        return (coord, span)
     }
 }

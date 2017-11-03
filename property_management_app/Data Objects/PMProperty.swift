@@ -17,6 +17,7 @@ enum PMPropertyKeys : String {
     case imageUrlThumb = "imgUrlThumb"
     case latitude = "latitude"
     case longitude = "longitude"
+    case tenants = "tenants"
 }
 struct PMProperty {
     
@@ -27,8 +28,12 @@ struct PMProperty {
     var imageURLMain : String!
     var imageURLThumb : String!
     var gpsCoordinate : PMCoordinate!
-    
-    
+    var tenants = [PMUser]()
+    var totalTenants : Int {
+        get {
+            return tenants.count
+        }
+    }
     static func buildWithJSONResult( jsonDict : [String : Any]) -> PMProperty {
         
         var newProp = PMProperty()
@@ -53,6 +58,15 @@ struct PMProperty {
             }
         }
         
+        if let tenants = jsonDict[PMPropertyKeys.tenants.rawValue] as? [[String : Any]] {
+            
+            for t in tenants {
+                
+                let newTenant = PMUser.buildUserWithDict(jsonDict: t)
+                
+                newProp.tenants.append(newTenant)
+            }
+        }
         
         return newProp
     }

@@ -39,7 +39,7 @@ class PMPropertiesViewController: UIViewController, UIPageViewControllerDataSour
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        setInitialSegmentedIndex(index: 1)
+        setInitialSegmentedIndex(index: 0)
     }
     
     private func getProperties() {
