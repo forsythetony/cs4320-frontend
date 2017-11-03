@@ -227,12 +227,8 @@ class PMPropertiesMapView: UIViewController, MKMapViewDelegate {
             
             let pntAnnotation = MKPointAnnotation()
             
-            pntAnnotation.title = "hi"
+            pntAnnotation.title = "\(prop.totalTenants)"
             pntAnnotation.coordinate = coord
-            
-            let anno = PMPropertyPinView(annotation: pntAnnotation, reuseIdentifier: nil)
-            
-            anno.totalTenants = prop.totalTenants
             
             pins.append(pntAnnotation)
         }
@@ -250,21 +246,21 @@ class PMPropertiesMapView: UIViewController, MKMapViewDelegate {
         self.mapView.setRegion(reg, animated: true)
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        
-        let anno = annotation as! MKPointAnnotation
-        
-        let index = pins.index(of: anno) ?? 0
-        
-        let props = properties[index]
-        
-        var annoView = PMPropertyPinView(annotation: anno, reuseIdentifier: nil)
-        
-        annoView.totalTenants = props.totalTenants
-        
-        return annoView
-        
-    }
+//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+//
+//        let anno = annotation as! MKPointAnnotation
+//
+//        let index = pins.index(of: anno) ?? 0
+//
+//        let props = properties[index]
+//
+//        var annoView = PMPropertyPinView(annotation: anno, reuseIdentifier: nil)
+//
+//        annoView.totalTenants = props.totalTenants
+//
+//        return annoView
+//
+//    }
     private func loadProperties() {
         
         PMDataManager.sharedManager.getPropertiesForUser(userID: 1) { (result) in
