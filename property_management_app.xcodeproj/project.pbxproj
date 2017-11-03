@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253B9CCA1FAC768E0009EB3D /* PMColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B9CC91FAC768E0009EB3D /* PMColorHelpers.swift */; };
+		253B9CCC1FAC76C90009EB3D /* spire_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B9CCB1FAC76C90009EB3D /* spire_dark.png */; };
+		253B9CCE1FAC78C40009EB3D /* PMPropertyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B9CCD1FAC78C40009EB3D /* PMPropertyInfoViewController.swift */; };
 		257276B21FABFEE000BC5BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257276B11FABFEE000BC5BE9 /* AppDelegate.swift */; };
 		257276B41FABFEE000BC5BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257276B31FABFEE000BC5BE9 /* ViewController.swift */; };
 		257276B71FABFEE000BC5BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 257276B51FABFEE000BC5BE9 /* Main.storyboard */; };
@@ -19,10 +22,17 @@
 		25CB94D51FAC033F00A58AF5 /* PMDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D41FAC033F00A58AF5 /* PMDataManager.swift */; };
 		25CB94D71FAC036E00A58AF5 /* PMProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D61FAC036E00A58AF5 /* PMProperty.swift */; };
 		25CB94D91FAC03FA00A58AF5 /* PMCustomStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CB94D81FAC03FA00A58AF5 /* PMCustomStructs.swift */; };
+		25E5D0021FAC67DA00C3C19F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E5D0011FAC67CE00C3C19F /* MapKit.framework */; };
+		25E5D0051FAC6BF900C3C19F /* PMCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E5D0041FAC6BF900C3C19F /* PMCalendarViewController.swift */; };
+		25E5D0081FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E5D0061FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift */; };
+		25E5D0091FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25E5D0071FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib */; };
 		D5B20E8407B9D576F36AEC4E /* Pods_property_management_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE3412ADA4FE60048AE7DBA0 /* Pods_property_management_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253B9CC91FAC768E0009EB3D /* PMColorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMColorHelpers.swift; sourceTree = "<group>"; };
+		253B9CCB1FAC76C90009EB3D /* spire_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spire_dark.png; path = "../../../../../../temp/spiration dark/spire_dark.png"; sourceTree = "<group>"; };
+		253B9CCD1FAC78C40009EB3D /* PMPropertyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPropertyInfoViewController.swift; sourceTree = "<group>"; };
 		257276AE1FABFEE000BC5BE9 /* property_management_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = property_management_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257276B11FABFEE000BC5BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257276B31FABFEE000BC5BE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +47,10 @@
 		25CB94D41FAC033F00A58AF5 /* PMDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMDataManager.swift; sourceTree = "<group>"; };
 		25CB94D61FAC036E00A58AF5 /* PMProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMProperty.swift; sourceTree = "<group>"; };
 		25CB94D81FAC03FA00A58AF5 /* PMCustomStructs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMCustomStructs.swift; sourceTree = "<group>"; };
+		25E5D0011FAC67CE00C3C19F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		25E5D0041FAC6BF900C3C19F /* PMCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMCalendarViewController.swift; sourceTree = "<group>"; };
+		25E5D0061FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMPropertyCollectionViewCell.swift; sourceTree = "<group>"; };
+		25E5D0071FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMPropertyCollectionViewCell.xib; sourceTree = "<group>"; };
 		BE3412ADA4FE60048AE7DBA0 /* Pods_property_management_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_property_management_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA3E996D74A7A075FDD52486 /* Pods-property_management_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-property_management_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-property_management_app/Pods-property_management_app.debug.xcconfig"; sourceTree = "<group>"; };
 		F2D393EC05184E023BB93C3F /* Pods-property_management_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-property_management_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-property_management_app/Pods-property_management_app.release.xcconfig"; sourceTree = "<group>"; };
@@ -47,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25E5D0021FAC67DA00C3C19F /* MapKit.framework in Frameworks */,
 				D5B20E8407B9D576F36AEC4E /* Pods_property_management_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +90,7 @@
 		257276B01FABFEE000BC5BE9 /* property_management_app */ = {
 			isa = PBXGroup;
 			children = (
+				253B9CCB1FAC76C90009EB3D /* spire_dark.png */,
 				259317F51FAC0B96005C1E70 /* View Controllers */,
 				259317F41FAC0ADE005C1E70 /* Builders */,
 				25CB94DA1FAC042200A58AF5 /* Data Objects */,
@@ -86,6 +102,7 @@
 				257276B81FABFEE000BC5BE9 /* Assets.xcassets */,
 				257276BA1FABFEE000BC5BE9 /* LaunchScreen.storyboard */,
 				257276BD1FABFEE000BC5BE9 /* Info.plist */,
+				253B9CC91FAC768E0009EB3D /* PMColorHelpers.swift */,
 			);
 			path = property_management_app;
 			sourceTree = "<group>";
@@ -101,7 +118,9 @@
 		259317F51FAC0B96005C1E70 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				25E5D0031FAC6BE200C3C19F /* Calendar */,
 				259317F61FAC0B9C005C1E70 /* Properties */,
+				253B9CCD1FAC78C40009EB3D /* PMPropertyInfoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +131,8 @@
 				259317F01FAC0803005C1E70 /* PMPropertiesViewController.swift */,
 				259317F71FAC1CF3005C1E70 /* PMPropertiesListView.swift */,
 				259317F91FAC1D03005C1E70 /* PMPropertiesMapView.swift */,
+				25E5D0061FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift */,
+				25E5D0071FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib */,
 			);
 			path = Properties;
 			sourceTree = "<group>";
@@ -122,6 +143,14 @@
 				25CB94D61FAC036E00A58AF5 /* PMProperty.swift */,
 			);
 			path = "Data Objects";
+			sourceTree = "<group>";
+		};
+		25E5D0031FAC6BE200C3C19F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				25E5D0041FAC6BF900C3C19F /* PMCalendarViewController.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 		EC88E89C0318A61ECC76A0E4 /* Pods */ = {
@@ -136,6 +165,7 @@
 		F49A7C2D462A49D69FE95DDA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25E5D0011FAC67CE00C3C19F /* MapKit.framework */,
 				BE3412ADA4FE60048AE7DBA0 /* Pods_property_management_app.framework */,
 			);
 			name = Frameworks;
@@ -203,6 +233,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253B9CCC1FAC76C90009EB3D /* spire_dark.png in Resources */,
+				25E5D0091FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib in Resources */,
 				257276BC1FABFEE000BC5BE9 /* LaunchScreen.storyboard in Resources */,
 				257276B91FABFEE000BC5BE9 /* Assets.xcassets in Resources */,
 				257276B71FABFEE000BC5BE9 /* Main.storyboard in Resources */,
@@ -270,9 +302,13 @@
 				259317F11FAC0803005C1E70 /* PMPropertiesViewController.swift in Sources */,
 				257276B41FABFEE000BC5BE9 /* ViewController.swift in Sources */,
 				257276B21FABFEE000BC5BE9 /* AppDelegate.swift in Sources */,
+				253B9CCA1FAC768E0009EB3D /* PMColorHelpers.swift in Sources */,
+				253B9CCE1FAC78C40009EB3D /* PMPropertyInfoViewController.swift in Sources */,
 				25CB94D91FAC03FA00A58AF5 /* PMCustomStructs.swift in Sources */,
 				259317F81FAC1CF3005C1E70 /* PMPropertiesListView.swift in Sources */,
+				25E5D0081FAC6E7900C3C19F /* JMPropertyCollectionViewCell.swift in Sources */,
 				259317F31FAC0893005C1E70 /* PMIconGenerator.swift in Sources */,
+				25E5D0051FAC6BF900C3C19F /* PMCalendarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

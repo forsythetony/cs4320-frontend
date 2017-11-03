@@ -13,8 +13,8 @@ enum PMPropertyKeys : String {
     case streetAddress = "streetAddress"
     case state = "state"
     case zip = "zip"
-    case imageURLMain = "imageUrlMain"
-    case imageUrlThumb = "imageUrlThumb"
+    case imageURLMain = "imgUrlMain"
+    case imageUrlThumb = "imgUrlThumb"
     case latitude = "latitude"
     case longitude = "longitude"
 }

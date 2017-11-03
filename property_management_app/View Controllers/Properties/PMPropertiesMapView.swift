@@ -62,10 +62,27 @@ class PMPropertiesMapView: UIViewController {
         
         mv.setRegion(TestValues().testCoordinateRegion, animated: false)
         mv.isUserInteractionEnabled = true
+        
+        self.mapView = mv
     }
     private func reloadMap() {
         
+        var pins = [MKAnnotation]()
+        
+        for prop in self.properties {
+            
+            let coord = CLLocationCoordinate2D(latitude: prop.gpsCoordinate.latitude, longitude: prop.gpsCoordinate.longitude)
+            
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = coord
+            
+            pins.append(annotation)
+        }
+        
+        
+        self.mapView.addAnnotations(pins)
     }
+    
     private func loadProperties() {
         
         PMDataManager.sharedManager.getPropertiesForUser(userID: 1) { (result) in

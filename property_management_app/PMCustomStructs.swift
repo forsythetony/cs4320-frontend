@@ -33,3 +33,21 @@ struct TestValues {
     let testCoordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2DMake(38.956899999999997, -92.316199999999995), span: MKCoordinateSpan(latitudeDelta: DEFAULT_COORDINATE_SPAN, longitudeDelta: DEFAULT_COORDINATE_SPAN))
     
 }
+
+extension Double {
+    
+    var CGFloatValue : CGFloat {
+        get {
+            return CGFloat(self)
+        }
+    }
+}
+
+extension UIEdgeInsets {
+    
+    var totalWidth : CGFloat {
+        get {
+            return self.left + self.right
+        }
+    }
+}

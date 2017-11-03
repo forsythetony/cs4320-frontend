@@ -36,6 +36,12 @@ class PMPropertiesViewController: UIViewController, UIPageViewControllerDataSour
         getProperties()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        setInitialSegmentedIndex(index: 1)
+    }
+    
     private func getProperties() {
         
         dataManager.getPropertiesForUser(userID: 1) { result in
@@ -77,8 +83,18 @@ class PMPropertiesViewController: UIViewController, UIPageViewControllerDataSour
         }
         
         self.segmentedController = segmentedControl
+        
+       
     }
     
+    func setInitialSegmentedIndex( index : Int) {
+        
+        self.segmentedController.selectedSegmentIndex = index
+        
+        let vc = self.pageViewControllers[index]
+        
+        self.pageViewController.setViewControllers([vc], direction: .forward, animated: false, completion: nil)
+    }
     @objc func segmentedValueDidUpdate( sender : UISegmentedControl) {
         
         let vc = self.pageViewControllers[sender.selectedSegmentIndex]
