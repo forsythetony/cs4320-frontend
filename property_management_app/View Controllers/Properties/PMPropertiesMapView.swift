@@ -88,39 +88,11 @@ class PMPropertyPinView : MKAnnotationView {
         
         ref.setStrokeColor(backgroundColor.cgColor)
         ref.setFillColor(backgroundColor.cgColor)
-//
-//        let path = UIBezierPath()
 
         let width = self.frame.size.width
         let height = self.frame.size.height
 
 
-//        let bottomPnt = CGPoint(x: width / 2.0, y: height)
-//
-//        path.move(to: bottomPnt)
-//
-//        let leftPoint = CGPoint(x: 0.0, y: height / 2.0)
-//
-//        let leftPointsOffset = leftPoint.verticalOffsets(o: 4.0)
-//
-//        path.addLine(to: leftPoint)
-//
-//        let topPoint = CGPoint(x: width / 2.0, y: 0.0)
-//
-//
-//        var rightPoint = leftPoint
-//        rightPoint.x = width
-//
-//        let ctrl1 = CGPoint(x: topPoint.x - 3.0, y: topPoint.y)
-//        let ctrl2 = CGPoint(x: topPoint.x + 3.0, y: topPoint.y)
-//        path.addCurve(to: rightPoint, controlPoint1: ctrl1, controlPoint2: ctrl2)
-//
-//        path.addLine(to: bottomPnt)
-//
-//        path.lineWidth = 1.0
-//
-        
-        
         let centerPoint = CGPoint(x: self.frame.width / 2.0, y: self.frame.height / 2.0)
         let radius = (width / 2.0) - (width * 0.02)
         
@@ -183,15 +155,7 @@ class PMPropertiesMapView: UIViewController, MKMapViewDelegate {
         
         loadProperties()
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     private func setupMap() {
         
         let mv = MKMapView()
@@ -245,22 +209,7 @@ class PMPropertiesMapView: UIViewController, MKMapViewDelegate {
         
         self.mapView.setRegion(reg, animated: true)
     }
-    
-//    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//
-//        let anno = annotation as! MKPointAnnotation
-//
-//        let index = pins.index(of: anno) ?? 0
-//
-//        let props = properties[index]
-//
-//        var annoView = PMPropertyPinView(annotation: anno, reuseIdentifier: nil)
-//
-//        annoView.totalTenants = props.totalTenants
-//
-//        return annoView
-//
-//    }
+
     private func loadProperties() {
         
         PMDataManager.sharedManager.getPropertiesForUser(userID: 1) { (result) in

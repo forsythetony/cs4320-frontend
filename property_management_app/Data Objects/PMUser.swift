@@ -11,11 +11,11 @@ import Foundation
 
 enum PMUserKeys : String {
     case ID = "id"
-    case firstName = "firstName"
-    case lastName = "lastName"
+    case firstName = "first_name"
+    case lastName = "last_name"
     case email = "email"
-    case profileImage = "profileImage"
-    case profileImageThumb = "profileImageThumbnail"
+    case profileImage = "image_url_main"
+    case profileImageThumb = "image_url_thumb"
     case password = "password"
 }
 
