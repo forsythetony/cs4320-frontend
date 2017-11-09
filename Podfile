@@ -11,4 +11,5 @@ target 'property_management_app' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'JTAppleCalendar', '~> 7.0'
   pod 'AlamofireImage', '~> 3.3'
+  pod 'XLForm', '~> 4.0'
 end

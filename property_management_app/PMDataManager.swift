@@ -43,6 +43,28 @@ class PMDataManager: NSObject {
     }
     
     
+    
+    func getPropertyWithID(propID : Int, completion : @escaping (PMProperty) -> Void) {
+        
+        let urlString = "\(API_BASE_URL)/property/\(propID)"
+        
+        
+        Alamofire.request(urlString).responseJSON { (response) in
+            
+            
+            if let json = response.result.value as? [String : Any] {
+                
+                let r = PMProperty.buildWithJSONResult(jsonDict: json)
+                
+                completion(r)
+            }
+            else {
+                //  Handle the error somehow here
+            }
+        }
+    }
+    
+    
 }
 
 func printAllProperties(props : [PMProperty]) {
