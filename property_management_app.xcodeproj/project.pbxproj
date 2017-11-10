@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		253B9CCA1FAC768E0009EB3D /* PMColorHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B9CC91FAC768E0009EB3D /* PMColorHelpers.swift */; };
-		253B9CCC1FAC76C90009EB3D /* spire_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B9CCB1FAC76C90009EB3D /* spire_dark.png */; };
 		253B9CCE1FAC78C40009EB3D /* PMPropertyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253B9CCD1FAC78C40009EB3D /* PMPropertyInfoViewController.swift */; };
+		253D8B6F1FB51D3300E0713C /* PMAddPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253D8B6E1FB51D3300E0713C /* PMAddPropertyViewController.swift */; };
 		2550E1261FB2759400492F65 /* PMPropertyInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2550E1251FB2759400492F65 /* PMPropertyInformationViewController.swift */; };
 		257276B21FABFEE000BC5BE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257276B11FABFEE000BC5BE9 /* AppDelegate.swift */; };
 		257276B41FABFEE000BC5BE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257276B31FABFEE000BC5BE9 /* ViewController.swift */; };
@@ -34,8 +34,10 @@
 
 /* Begin PBXFileReference section */
 		253B9CC91FAC768E0009EB3D /* PMColorHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMColorHelpers.swift; sourceTree = "<group>"; };
-		253B9CCB1FAC76C90009EB3D /* spire_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spire_dark.png; path = "../../../../../../temp/spiration dark/spire_dark.png"; sourceTree = "<group>"; };
 		253B9CCD1FAC78C40009EB3D /* PMPropertyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPropertyInfoViewController.swift; sourceTree = "<group>"; };
+		253D8B6B1FB51CB400E0713C /* spire_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spire_dark.png; sourceTree = "<group>"; };
+		253D8B6C1FB51CBC00E0713C /* spire_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spire_dark.png; path = "../../../../../../../temp/spiration dark/spire_dark.png"; sourceTree = "<group>"; };
+		253D8B6E1FB51D3300E0713C /* PMAddPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMAddPropertyViewController.swift; sourceTree = "<group>"; };
 		2550E1251FB2759400492F65 /* PMPropertyInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMPropertyInformationViewController.swift; sourceTree = "<group>"; };
 		257276AE1FABFEE000BC5BE9 /* property_management_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = property_management_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		257276B11FABFEE000BC5BE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253D8B6A1FB51CAD00E0713C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				253D8B6C1FB51CBC00E0713C /* spire_dark.png */,
+				253D8B6B1FB51CB400E0713C /* spire_dark.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		253D8B6D1FB51CEF00E0713C /* Add Property */ = {
+			isa = PBXGroup;
+			children = (
+				253D8B6E1FB51D3300E0713C /* PMAddPropertyViewController.swift */,
+			);
+			path = "Add Property";
+			sourceTree = "<group>";
+		};
 		2550E1241FB2757100492F65 /* Property Information View */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +124,7 @@
 		257276B01FABFEE000BC5BE9 /* property_management_app */ = {
 			isa = PBXGroup;
 			children = (
-				253B9CCB1FAC76C90009EB3D /* spire_dark.png */,
+				253D8B6A1FB51CAD00E0713C /* Resources */,
 				259317F51FAC0B96005C1E70 /* View Controllers */,
 				259317F41FAC0ADE005C1E70 /* Builders */,
 				25CB94DA1FAC042200A58AF5 /* Data Objects */,
@@ -133,6 +152,7 @@
 		259317F51FAC0B96005C1E70 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				253D8B6D1FB51CEF00E0713C /* Add Property */,
 				2550E1241FB2757100492F65 /* Property Information View */,
 				25E5D0031FAC6BE200C3C19F /* Calendar */,
 				259317F61FAC0B9C005C1E70 /* Properties */,
@@ -251,7 +271,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				253B9CCC1FAC76C90009EB3D /* spire_dark.png in Resources */,
 				25E5D0091FAC6E7900C3C19F /* JMPropertyCollectionViewCell.xib in Resources */,
 				257276BC1FABFEE000BC5BE9 /* LaunchScreen.storyboard in Resources */,
 				257276B91FABFEE000BC5BE9 /* Assets.xcassets in Resources */,
@@ -316,6 +335,7 @@
 			files = (
 				25CB94D51FAC033F00A58AF5 /* PMDataManager.swift in Sources */,
 				259317FA1FAC1D03005C1E70 /* PMPropertiesMapView.swift in Sources */,
+				253D8B6F1FB51D3300E0713C /* PMAddPropertyViewController.swift in Sources */,
 				25CB94D71FAC036E00A58AF5 /* PMProperty.swift in Sources */,
 				259317F11FAC0803005C1E70 /* PMPropertiesViewController.swift in Sources */,
 				257276B41FABFEE000BC5BE9 /* ViewController.swift in Sources */,

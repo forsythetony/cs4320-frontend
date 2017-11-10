@@ -9,15 +9,16 @@
 import Foundation
 
 enum PMPropertyKeys : String {
-    case ID = "id"
-    case streetAddress = "street_address"
-    case state = "state"
-    case zip = "zip"
-    case imageURLMain = "image_url_main"
-    case imageUrlThumb = "image_url_thumbnail"
-    case latitude = "latitude"
-    case longitude = "longitude"
-    case tenants = "tenants"
+    case ID             = "id"
+    case streetAddress  = "street_address"
+    case state          = "state"
+    case zip            = "zip"
+    case imageURLMain   = "image_url_main"
+    case imageUrlThumb  = "image_url_thumbnail"
+    case latitude       = "latitude"
+    case longitude      = "longitude"
+    case tenants        = "tenants"
+    case city           = "city"
 }
 struct PMProperty {
     
